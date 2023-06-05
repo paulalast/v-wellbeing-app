@@ -1,0 +1,39 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+} */
+
+.confetti-container {
+	display: none;
+}
+.greyscale {
+	opacity: 0.5;
+	filter: blur(1px);
+}
+
+.lotus {
+	display: inline-block;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.5;
+	transition: opacity .3s;
+	
+}
+.lotus:hover{
+	opacity: 1;
+}
+

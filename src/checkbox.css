@@ -1,0 +1,50 @@
+input[type="checkbox"] {
+	position: relative;
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	min-height: 0;
+	border-radius: 50%;
+	border: 2px solid #b58c67;
+	background-color: #e2ded9;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+	content: url("./../public/check.png");
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	border-radius: 50%;
+}
+
+input[type="checkbox"]:checked {
+	background-color: transparent;
+}
+
+input[type="checkbox"]:not(:checked)::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+input:focus {
+	outline: none;
+	box-shadow: none;
+	background: white;
+}
+input[type="text"] {
+	caret-color: #b58c67;
+}
+
+textarea {
+	outline: none;
+	box-shadow: none;
+	background: white;
+	caret-color: #b58c67;
+}
+ol li {
+	list-style-type: decimal;
+}

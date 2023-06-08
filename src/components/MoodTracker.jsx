@@ -68,12 +68,12 @@ function MoodTracker() {
 	}
 	return (
 		<>
-			<div className='my-4 pb-0 h-fit'>
+			<div className='my-4 mb-0 pb-0 h-fit'>
 				<MiniSectionHeader miniTitle='Mood tracker' />
-				<div className=' m-2 px-4 rounded-sm 2xl:h-56 bg-tertiary flex justify-self-center justify-center max-lg:flex-wrap sm:h-fit'>
+				<div className=' m-2 px-4 py-2 rounded-sm 2xl:h-fit bg-tertiary flex justify-self-center justify-center max-lg:flex-wrap sm:h-fit'>
 					{moodAnimations.map(animation => (
 						<div
-							className={`'w-20 m-2 pt-4 max-lg:w-24 transform hover:scale-125 transition duration-300 ease-in-outh-fit ${
+							className={`'max-2xl:w-18 m-2 pt-4 max-lg:w-20 transform hover:scale-125 transition duration-300 ease-in-outh-fit ${
 								animation.id !== chosenMoodId ? "greyscale" : ""
 							}`}
 							key={animation.id}

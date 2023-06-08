@@ -13,7 +13,7 @@ function TodaysFocus({ miniTitle }) {
 			<MiniSectionHeader miniTitle="Today's focus" />
 			<ul className='mx-2 my-2 rounded-sm bg-tertiary flex flex-col'>
 				{focus.map(focus => (
-					<li className='w-full px-4 flex py-3'>
+					<li className='w-full px-4 flex py-3' key={focus.id}>
 						<label htmlFor={focus.id} className='w-full flex pb-2 items-center'>
 							<input type='checkbox' id={focus.id} className='ml-1' />
 							<input

@@ -15,7 +15,7 @@ function GratitudeList(miniTitle) {
 
 			<ul className=' mx-2  rounded-sm bg-tertiary flex flex-col'>
 				{gratitudes.map(gratitude => (
-					<li className='w-full px-4 flex py-2'>
+					<li className='w-full px-4 flex py-2' key={gratitude.id}>
 						<input
 							type='text'
 							id={`${gratitude.id}text`}

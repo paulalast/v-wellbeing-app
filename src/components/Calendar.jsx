@@ -55,7 +55,7 @@ function Calendar() {
 						<div className='m-1 text-center flex justify-center'>
 							<img
 								className='w-6 mx-3 p-1'
-								src='./public/info.png'
+								src='./info.png'
 								alt='info'
 							/>
 							<p className='text-base italic tracking-wider flex-row'>

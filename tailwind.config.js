@@ -10,8 +10,8 @@ export default {
 				grey: "#707070",
 			},
 			fontFamily: {
-				serif: ["Fondamento", "cursive"],
-				sans: ["Quicksand", "sans-serif"],
+				serif: ["Diphylleia", "serif"],
+				sans: ["Cormorant", "serif"],
 			},
 		},
 	},

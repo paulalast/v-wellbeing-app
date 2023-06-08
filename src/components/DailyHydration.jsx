@@ -32,7 +32,7 @@ function DailyHydration() {
 			<div className=' h-fit mx-2 my-1.5 px-4 rounded-sm h-52 bg-tertiary flex justify-self-center justify-center lg:flex-wrap  max-sm:flex-wrap	'>
 				{glasses.map(glass => (
 					<div
-						className=' w-32 p-2 w-full mx-2 flex lg:w-24 md:w-24 max-sm:w-24 justify-items-center '
+						className=' w-32 p-2 w-full mx-2 flex lg:w-24 md:w-24 max-sm:w-24 justify-items-center transform hover:scale-125 transition duration-300 ease-in-out'
 						key={glass.id}
 						onClick={() => handleClick(glass.id)}
 					>

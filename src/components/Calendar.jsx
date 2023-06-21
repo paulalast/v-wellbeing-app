@@ -17,7 +17,7 @@ function Calendar() {
 				const today = new Date().toISOString().split("T")[0]
 				const holidays = data.response.holidays
 				const todayHoliday = holidays.find(h => h.date.iso === today)
-				const description = data.response.description
+
 				if (todayHoliday) {
 					setDate(todayHoliday.date.iso)
 					setHoliday(todayHoliday.name)
@@ -46,18 +46,13 @@ function Calendar() {
 				{holiday ? (
 					<>
 						<p className='m-1 text-center italic tracking-wider text-xl'>
-							Today we are celebrating:
-							<span className='italic font-black text-secondary bg-primary'>
+							Today we are celebrating: 
+							<span className='italic font-black text-secondary bg-primary'> 
 								{holiday}
 							</span>
 							!
 						</p>
 						<div className='m-1 text-center flex justify-center'>
-							<img
-								className='w-6 mx-3 p-1'
-								src='./info.png'
-								alt='info'
-							/>
 							<p className='text-base italic tracking-wider flex-row'>
 								{description}
 							</p>
